@@ -11,7 +11,6 @@ RUN set -eux \
     && cd hugo-${HUGO_VERSION} \
     && GOBIN=/usr/local/bin go install --tags extended \
     && cd .. && rm -rf hugo* \
-    && npm install --prefix /usr/local/lib -D --save -g postcss@8.2.1 postcss-cli@8.3.1 autoprefixer@9.8.6 
 
 WORKDIR /data
 CMD ["hugo", "server", "-D", "--bind", "0.0.0.0"]
