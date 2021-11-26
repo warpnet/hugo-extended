@@ -1,7 +1,7 @@
 FROM golang:alpine
 LABEL maintainer="info@warpnet.nl" \
       repo="https://github.com/warpnet/hugo-extended"
-ENV HUGO_VERSION 0.88.1
+ENV HUGO_VERSION 0.89.4
 # hadolint ignore=DL3018,DL3003
 RUN set -eux \
     && apk add --no-cache nodejs npm curl gcc libc-dev g++ git \
