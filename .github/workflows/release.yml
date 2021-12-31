@@ -2,10 +2,18 @@
 
 name: Docker release
 
+# Run the workflow on:
+# pushes: When the repo is pushed to
+# workflow_dispatch: manual trigger
+# schedule: On the first day of every month, at 4:30 AM
+
 on:
   push:
     tags:
       - v*
+  workflow_dispatch:
+  schedule:
+    - cron: '30 04 1 * *'
 
 jobs:
   release:
