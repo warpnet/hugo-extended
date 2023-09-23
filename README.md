@@ -5,5 +5,5 @@ The hugo-extended container by Warpnet B.V. has hugo built with the `--extended`
 ## Example usage
 
 ```bash
-podman -v ./:/data:Z -p 1313:1313 warpnetbv/hugo-extended:latest
+podman run -v ./:/data:Z -p 1313:1313 warpnetbv/hugo-extended:latest
 ```
